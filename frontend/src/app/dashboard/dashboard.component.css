@@ -1,0 +1,13 @@
+.notLeftButton {
+    margin-left: 10px;
+  }
+  mat-card {
+    width: 30%;
+    margin: 20px auto;
+    text-align: center;
+  }
+  mat-card-header {
+    text-align: center;
+    display: inline-flex;
+  }
+  

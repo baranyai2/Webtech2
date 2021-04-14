@@ -1,0 +1,58 @@
+#buttonDiv {
+    text-align: left;
+    margin: 10px;
+}
+#buttonCard {
+    text-align: center;
+    width: 20%;
+    margin: auto;
+    margin-top: 10px;
+}
+#formCard {
+    width: 60%;
+    margin: 20px auto;
+    text-align: center;
+}
+mat-form-field {
+    padding: 20px;
+}
+#listContainer {
+    padding: 5px;
+    width: 1000px;
+    margin: auto;
+}
+.conentCard {
+    margin: 10px auto;
+    display: table;
+    width: 100%;
+}
+.deleteButton {
+    float: right;
+}
+.talbeCard {
+    display: table-row;
+    justify-content: center;
+}
+.tableCard div {
+    display: table-cell;
+}
+.manuCol {
+    width: 300px;
+    justify-content: center;
+    text-align: center;
+}
+.modelCol {
+    width: 300px;
+    justify-content: center;
+    text-align: center;
+}
+.priceCol {
+    width: 200px;
+    justify-content: center;
+    text-align: center;
+}
+.buttonCol {
+    width: 200px;
+    justify-content: center;
+    text-align: center;
+}

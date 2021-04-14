@@ -1,0 +1,45 @@
+<mat-card id="buttonCard" [style.backgroundColor]="'grey'">
+        <button routerLink="/dashboard" mat-raised-button color="primary">Dashboard</button>
+</mat-card>
+<br>
+<mat-card id="formCard">
+    <form [formGroup]="carsForm">
+      <mat-card-content>
+        <mat-form-field>
+          <mat-label>Manufacturer</mat-label>
+          <input formControlName="manufacturer" matInput>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Model</mat-label>
+          <input formControlName="model" matInput>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Price</mat-label>
+          <input formControlName="price" matInput>
+        </mat-form-field>
+        <button (click)="addCar()" mat-raised-button color="primary">Add Car</button>
+      </mat-card-content>
+    </form>
+  </mat-card>
+  <br>
+  <div id="listContainer">
+    <mat-card class="conentCard"> 
+      <mat-card-content class="tableCard">
+        <div class="manuCol">Manufacturer</div>
+        <div class="modelCol">Model</div>
+        <div class="priceCol">Price</div>
+        <div class="buttonCol"></div>
+      </mat-card-content>
+    </mat-card>
+    <mat-card class="conentCard" *ngFor="let car of Cars; let i = index">
+      <mat-card-content class="tableCard">
+        <div class="manuCol">{{car.manufacturer}}</div>
+        <div class="modelCol">{{car.model}}</div>
+        <div class="priceCol">{{car.price}}</div>
+        <div class="buttonCol">
+          <button (click)="deleteCar(i)" mat-raised-button color="warn">Delete</button>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+    
